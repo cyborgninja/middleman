@@ -1,0 +1,22 @@
+!!!
+%html
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type" }
+    %meta{content: "width=device-width, minimum-scale=1, maximum-scale=1 ,user-scalable=no", name: "viewport"}
+    %title= data.page.title
+    %meta{name: "keywords", content: "#{data.page.keywords}"}
+    %meta{name: "description", content: "#{data.page.description}"}
+    %link{rel: "stylesheet", media: "all", href: "/assets/stylesheets/reset.css"}
+    %link{rel: "stylesheet", media: "all", href: "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"}
+    %link{rel: "stylesheet", media: "all", href: "/assets/stylesheets/style.css"}
+    %script{type: "text/javascript", src: "//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"}
+    %script{type: "text/javascript", src: "/assets/javascripts/jquery.smoothscroll.js"}
+    %script{type: "text/javascript", src: "/assets/javascripts/views.js"}
+    %meta{property: "og:type", content: "website"}
+    %meta{property: "og:title", content: "#{data.page.title}"}
+    %meta{property: "og:description", content: "#{data.page.description}"}
+    %meta{property: "og:url", content: "#{current_page.url}"}
+    %meta{property: "og:image", content: ""}
+    %link{rel: "canonical", href: "#{current_page.url}"}
+  %body
+    = yield
