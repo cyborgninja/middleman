@@ -2,7 +2,7 @@
 
 静的なHTMLファイルサイトを作るときに普通のHTML書いたりするのは鬱陶しすぎるので初期パッケを想定して作成。
 
-## version
+## バージョン
 
 middleman ~>3.3.7  
 (livereload, minify(css,javascript,html))
@@ -14,11 +14,11 @@ scss,hamlで作成
 
 ## その他備考
 
-.gitignore  
+### .gitignore  
 buildディレクトリは除外
 
-_setting.css.scss  
+### _setting.css.scss  
 flexboxのmixinなど
 
-smoothscroll.js  
+### smoothscroll.js  
 安易なアンカーリンクがよくあるので追加
