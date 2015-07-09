@@ -31,6 +31,19 @@
   display: -ms-flexbox;
   display: flex;
 }
+@mixin flexbox-fixed {
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+@mixin flexbox-grow($value: 1) {
+  -webkit-flex-grow: $value;
+  -moz-flex-grow: $value;
+  -ms-flex-grow: $value;
+  flex-grow: $value;
+}
 @mixin flex-direction($value: row) {
   @if $value == row-reverse {
     -webkit-box-direction: reverse;
@@ -98,7 +111,6 @@
   align-self: $value;
 }
 @mixin flexbox-wrap($value: nowrap) {
-  // No Webkit Box fallback.
   -webkit-flex-wrap: $value;
   -moz-flex-wrap: $value;
   @if $value == nowrap {
